@@ -657,3 +657,25 @@ body {
     transform: scale(1.2);
     filter: brightness(1.2);
   }
+  
+  @media (max-width: 768px) {
+    .terminal {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .experience {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .experience {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
